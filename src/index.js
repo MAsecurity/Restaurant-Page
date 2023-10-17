@@ -1,9 +1,10 @@
 import "./style.css";
 import {getDefault} from "./functions/renderDefault";
-import {home} from "./functions/renderHome";
+import {getHome} from "./functions/renderHome";
 
 (function deploy(){
-  getDefault()
+  getDefault();
+  getHome();
   
 })();
 

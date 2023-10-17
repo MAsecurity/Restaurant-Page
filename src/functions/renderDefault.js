@@ -13,6 +13,9 @@ function getDefault(){
   liHome.textContent = "Home";
   liMenu.textContent = "Menu";
   liContact.textContent = "Contact us";
+  liHome.setAttribute("id", "home");
+  liMenu.setAttribute("id", "menu");
+  liContact.setAttribute("id", "contact")
   const centeredContent  = document.createElement("div");
   centeredContent.classList.add("center-content");
   document.body.appendChild(contentElement);
