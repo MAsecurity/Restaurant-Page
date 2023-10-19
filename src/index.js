@@ -1,7 +1,8 @@
 import "./style.css";
 import {getDefault} from "./functions/renderDefault";
 import {getHome} from "./functions/renderHome";
-import { clearContents } from "./functions/clear";
+import {clearContents} from "./functions/clear";
+import {menu} from "./functions/renderMenu";
 
 (function deploy(){
   getDefault();
@@ -15,6 +16,7 @@ import { clearContents } from "./functions/clear";
   });
   menuLink.addEventListener("click", ()=>{
     clearContents();
+    menu();
   });
   contactLink.addEventListener("click", ()=>{
     clearContents();
