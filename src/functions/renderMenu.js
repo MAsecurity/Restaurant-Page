@@ -1,4 +1,8 @@
 import pepperoniImage from "../images/pepperoniPizza.png";
+import tandooriImage from "../images/TandooriChicken.png";
+import donnerKebabImage from "../images/donnerKebab.png";
+import beefImage from "../images/beefPizza.png";
+import vegetarianImage from "../images/veganPizza.png";
 function menu(){
   const allCenteredContent = document.querySelector(".center-content");
   const menuContent = document.createElement("div");
@@ -31,12 +35,89 @@ function menu(){
   const pepperoniDescription = document.createElement("div");
   pepperoniDescription.classList.add("description");
   pepperoniDescription.textContent = "Eat our delicous Pepperoni Pizza for only at the price of £13";
+  // TandooriChicken article
+  const tandooriMenuArticle = document.createElement("div");
+  tandooriMenuArticle.classList.add("menu-article");
+  const tandooriCard = document.createElement("div");
+  tandooriCard.classList.add("card");
+  const tandooriPrice = document.createElement("div");
+  tandooriPrice.classList.add("price");
+  tandooriPrice.textContent = "£13";
+  const tandooriHeading = document.createElement("div");
+  tandooriHeading.classList.add("card-heading");
+  tandooriHeading.textContent = 'Tandoori Chicken Pizza 12 "inch"';
+  const tandooriContainerImage = document.createElement("div");
+  tandooriContainerImage.classList.add("image");
+  const tandooriActualImage = document.createElement("img");
+  tandooriActualImage.classList.add("actual-image");
+  tandooriActualImage.src = tandooriImage;
+  const tandooriDescription = document.createElement("div");
+  tandooriDescription.classList.add("description");
+  tandooriDescription.textContent = "Eat our delicous Tandoori Chicken Pizza for only at the price of £13";
+  //Donner Kebab Article
+  const donnerKebabMenuArticle = document.createElement("div");
+  donnerKebabMenuArticle.classList.add("menu-article");
+  const donnerKebabCard = document.createElement("div");
+  donnerKebabCard.classList.add("card");
+  const donnerKebabPrice = document.createElement("div");
+  donnerKebabPrice.classList.add("price");
+  donnerKebabPrice.textContent = "£13";
+  const donnerKebabHeading = document.createElement("div");
+  donnerKebabHeading.classList.add("card-heading");
+  donnerKebabHeading.textContent = 'Donner Kebab Pizza 12 "inch"';
+  const donnerKebabContainerImage = document.createElement("div");
+  donnerKebabContainerImage.classList.add("image");
+  const donnerKebabActualImage = document.createElement("img");
+  donnerKebabActualImage.classList.add("actual-image");
+  donnerKebabActualImage.src = donnerKebabImage;
+  const donnerKebabDescription = document.createElement("div");
+  donnerKebabDescription.classList.add("description");
+  donnerKebabDescription.textContent = "Eat our delicous Donner Kebab Pizza for only at the price of £13";
+  // Beef Pizza Article
+  const beefMenuArticle = document.createElement("div");
+  beefMenuArticle.classList.add("menu-article");
+  const beefCard = document.createElement("div");
+  beefCard.classList.add("card");
+  const beefPrice = document.createElement("div");
+  beefPrice.classList.add("price");
+  beefPrice.textContent = "£13";
+  const beefHeading = document.createElement("div");
+  beefHeading.classList.add("card-heading");
+  beefHeading.textContent = 'Beef Pizza 12 "inch"';
+  const beefContainerImage = document.createElement("div");
+  beefContainerImage.classList.add("image");
+  const beefActualImage = document.createElement("img");
+  beefActualImage.classList.add("actual-image");
+  beefActualImage.src = beefImage;
+  const beefDescription = document.createElement("div");
+  beefDescription.classList.add("description");
+  beefDescription.textContent = "Eat our delicous Beef Pizza for only at the price of £13";
+  //Vegetarian Article
+  const vegetarianMenuArticle = document.createElement("div");
+  vegetarianMenuArticle.classList.add("menu-article");
+  const vegetarianCard = document.createElement("div");
+  vegetarianCard.classList.add("card");
+  const vegetarianPrice = document.createElement("div");
+  vegetarianPrice.classList.add("price");
+  vegetarianPrice.textContent = "£13";
+  const vegetarianHeading = document.createElement("div");
+  vegetarianHeading.classList.add("card-heading");
+  vegetarianHeading.textContent = 'Vegetarian Pizza 12 "inch"';
+  const vegetarianContainerImage = document.createElement("div");
+  vegetarianContainerImage.classList.add("image");
+  const vegetarianActualImage = document.createElement("img");
+  vegetarianActualImage.classList.add("actual-image");
+  vegetarianActualImage.src = vegetarianImage;
+  const vegetarianDescription = document.createElement("div");
+  vegetarianDescription.classList.add("description");
+  vegetarianDescription.textContent = "Eat our delicous Vegetarian Pizza for only at the price of £13";
   // Add DOM elements
   allCenteredContent.appendChild(menuContent);
   menuContent.appendChild(menuTitle);
   menuContent.appendChild(pizzaSection);
   pizzaSection.appendChild(pizzaSectionTitle);
   pizzaSection.appendChild(hrElement);
+  //Adding Pepperoni Pizza to DOM
   menuContent.appendChild(pepperoniMenuArticle);
   pepperoniMenuArticle.appendChild(pepperoniCard);
   pepperoniCard.appendChild(pepperoniPrice);
@@ -44,5 +125,37 @@ function menu(){
   pepperoniCard.appendChild(pepperoniContainerImage);
   pepperoniContainerImage.appendChild(pepperoniActualImage);
   pepperoniCard.appendChild(pepperoniDescription);
+  //Adding Tandoori Chicken Pizza to DOM
+  menuContent.appendChild(tandooriMenuArticle);
+  tandooriMenuArticle.appendChild(tandooriCard);
+  tandooriCard.appendChild(tandooriPrice);
+  tandooriCard.appendChild(tandooriHeading);
+  tandooriCard.appendChild(tandooriContainerImage);
+  tandooriContainerImage.appendChild(tandooriActualImage);
+  tandooriCard.appendChild(tandooriDescription);
+  //Adding Donner Kebab Pizza to DOM
+  menuContent.appendChild(donnerKebabMenuArticle);
+  donnerKebabMenuArticle.appendChild(donnerKebabCard);
+  donnerKebabCard.appendChild(donnerKebabPrice);
+  donnerKebabCard.appendChild(donnerKebabHeading);
+  donnerKebabCard.appendChild(donnerKebabContainerImage);
+  donnerKebabContainerImage.appendChild(donnerKebabActualImage);
+  donnerKebabCard.appendChild(donnerKebabDescription);
+  //Adding Beef Pizza to DOM
+  menuContent.appendChild(beefMenuArticle);
+  beefMenuArticle.appendChild(beefCard);
+  beefCard.appendChild(beefPrice);
+  beefCard.appendChild(beefHeading);
+  beefCard.appendChild(beefContainerImage);
+  beefContainerImage.appendChild(beefActualImage);
+  beefCard.appendChild(beefDescription);
+  //Adding Vegetarian Pizza to DOM
+  menuContent.appendChild(vegetarianMenuArticle);
+  vegetarianMenuArticle.appendChild(vegetarianCard);
+  vegetarianCard.appendChild(vegetarianPrice);
+  vegetarianCard.appendChild(vegetarianHeading);
+  vegetarianCard.appendChild(vegetarianContainerImage);
+  vegetarianContainerImage.appendChild(vegetarianActualImage);
+  vegetarianCard.appendChild(vegetarianDescription);
 }
 export {menu};
