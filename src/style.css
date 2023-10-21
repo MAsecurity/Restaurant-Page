@@ -176,7 +176,7 @@
 .price {
   border: 2px solid black;
   background-color: #d6d3d1;
-  width: 11%;
+  width: 10%;
   border-radius: 50%;
   grid-row-start: 1;
 }
