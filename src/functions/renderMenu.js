@@ -3,6 +3,8 @@ import tandooriImage from "../images/TandooriChicken.png";
 import donnerKebabImage from "../images/donnerKebab.png";
 import beefImage from "../images/beefPizza.png";
 import vegetarianImage from "../images/veganPizza.png";
+import strawberryImage from "../images/strawberryCheeseCake.png"
+import chocolateImage from "../images/Chocolate.png"
 function menu(){
   const allCenteredContent = document.querySelector(".center-content");
   const menuContent = document.createElement("div");
@@ -111,6 +113,50 @@ function menu(){
   const vegetarianDescription = document.createElement("div");
   vegetarianDescription.classList.add("description");
   vegetarianDescription.textContent = "Eat our delicous Vegetarian Pizza for only at the price of £13";
+  //Adding Desserts section
+  const dessertsSection = document.createElement("div");
+  dessertsSection.classList.add("desserts");
+  const dessertsSectionTitle = document.createElement("div");
+  dessertsSectionTitle.textContent = "Desserts";
+  // Strawberry Cheesecake Article
+  const strawberryMenuArticle = document.createElement("div");
+  strawberryMenuArticle.classList.add("menu-article");
+  const strawberryCard = document.createElement("div");
+  strawberryCard.classList.add("card");
+  const strawberryPrice = document.createElement("div");
+  strawberryPrice.classList.add("price");
+  strawberryPrice.textContent = "£4";
+  const strawberryHeading = document.createElement("div");
+  strawberryHeading.classList.add("card-heading");
+  strawberryHeading.textContent = 'Strawberry Cheesecake';
+  const strawberryContainerImage = document.createElement("div");
+  strawberryContainerImage.classList.add("image");
+  const strawberryActualImage = document.createElement("img");
+  strawberryActualImage.classList.add("actual-image");
+  strawberryActualImage.src = strawberryImage;
+  const strawberryDescription = document.createElement("div");
+  strawberryDescription.classList.add("description");
+  strawberryDescription.textContent = "Eat our delicous Strawberry Cheesecake for only at the price of £4";
+  // Chocolate cake Article
+  const chocolateMenuArticle = document.createElement("div");
+  chocolateMenuArticle.classList.add("menu-article");
+  const chocolateCard = document.createElement("div");
+  chocolateCard.classList.add("card");
+  const chocolatePrice = document.createElement("div");
+  chocolatePrice.classList.add("price");
+  chocolatePrice.textContent = "£4";
+  const chocolateHeading = document.createElement("div");
+  chocolateHeading.classList.add("card-heading");
+  chocolateHeading.textContent = 'Chocolate cake';
+  const chocolateContainerImage = document.createElement("div");
+  chocolateContainerImage.classList.add("image");
+  const chocolateActualImage = document.createElement("img");
+  chocolateActualImage.classList.add("actual-image");
+  chocolateActualImage.src = chocolateImage;
+  const chocolateDescription = document.createElement("div");
+  chocolateDescription.classList.add("description");
+  chocolateDescription.textContent = "Eat our delicous Chocolate cake for only at the price of £4";
+  
   // Add DOM elements
   allCenteredContent.appendChild(menuContent);
   menuContent.appendChild(menuTitle);
@@ -157,5 +203,28 @@ function menu(){
   vegetarianCard.appendChild(vegetarianContainerImage);
   vegetarianContainerImage.appendChild(vegetarianActualImage);
   vegetarianCard.appendChild(vegetarianDescription);
+  //Adding Desserts section
+  menuContent.appendChild(dessertsSection);
+  dessertsSection.appendChild(dessertsSectionTitle);
+  dessertsSection.appendChild(hrElement);
+  // Adding Strawberry Cheesecake to DOM
+  menuContent.appendChild(strawberryMenuArticle);
+  strawberryMenuArticle.appendChild(strawberryCard);
+  strawberryCard.appendChild(strawberryPrice);
+  strawberryCard.appendChild(strawberryHeading);
+  strawberryCard.appendChild(strawberryContainerImage);
+  strawberryContainerImage.appendChild(strawberryActualImage);
+  strawberryCard.appendChild(strawberryDescription);
+  // Adding Chocolate cake to DOM
+  menuContent.appendChild(chocolateMenuArticle);
+  chocolateMenuArticle.appendChild(chocolateCard);
+  chocolateCard.appendChild(chocolatePrice);
+  chocolateCard.appendChild(chocolateHeading);
+  chocolateCard.appendChild(chocolateContainerImage);
+  chocolateContainerImage.appendChild(chocolateActualImage);
+  chocolateCard.appendChild(chocolateDescription);
+
+
+
 }
 export {menu};
