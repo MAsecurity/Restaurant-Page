@@ -3,8 +3,10 @@ import tandooriImage from "../images/TandooriChicken.png";
 import donnerKebabImage from "../images/donnerKebab.png";
 import beefImage from "../images/beefPizza.png";
 import vegetarianImage from "../images/veganPizza.png";
-import strawberryImage from "../images/strawberryCheeseCake.png"
-import chocolateImage from "../images/Chocolate.png"
+import strawberryImage from "../images/strawberryCheeseCake.png";
+import chocolateImage from "../images/Chocolate.png";
+import sevenUpImage from "../images/sevenUp.png";
+import cocoColaImage from "../images/Coco-cola.png";
 function menu(){
   const allCenteredContent = document.querySelector(".center-content");
   const menuContent = document.createElement("div");
@@ -156,7 +158,49 @@ function menu(){
   const chocolateDescription = document.createElement("div");
   chocolateDescription.classList.add("description");
   chocolateDescription.textContent = "Eat our delicous Chocolate cake for only at the price of £4";
-  
+  // Add Drinks section
+  const drinksSection = document.createElement("div");
+  drinksSection.classList.add("drinks");
+  const drinksSectionTitle = document.createElement("div");
+  drinksSectionTitle.textContent = "Drinks";
+  // Add 7Up article
+  const sevenUpMenuArticle = document.createElement("div");
+  sevenUpMenuArticle.classList.add("menu-article");
+  const sevenUpCard = document.createElement("div");
+  sevenUpCard.classList.add("card");
+  const sevenUpPrice = document.createElement("div");
+  sevenUpPrice.classList.add("price");
+  sevenUpPrice.textContent = "£1";
+  const sevenUpHeading = document.createElement("div");
+  sevenUpHeading.classList.add("card-heading");
+  sevenUpHeading.textContent = '7up';
+  const sevenUpContainerImage = document.createElement("div");
+  sevenUpContainerImage.classList.add("image");
+  const sevenUpActualImage = document.createElement("img");
+  sevenUpActualImage.classList.add("actual-image");
+  sevenUpActualImage.src = sevenUpImage;
+  const sevenUpDescription = document.createElement("div");
+  sevenUpDescription.classList.add("description");
+  sevenUpDescription.textContent = "Want a drink with your meal?, have some 7up.";
+  // Adding Coco-cola article
+  const cocoColaMenuArticle = document.createElement("div");
+  cocoColaMenuArticle.classList.add("menu-article");
+  const cocoColaCard = document.createElement("div");
+  cocoColaCard.classList.add("card");
+  const cocoColaPrice = document.createElement("div");
+  cocoColaPrice.classList.add("price");
+  cocoColaPrice.textContent = "£1";
+  const cocoColaHeading = document.createElement("div");
+  cocoColaHeading.classList.add("card-heading");
+  cocoColaHeading.textContent = 'Coco-cola';
+  const cocoColaContainerImage = document.createElement("div");
+  cocoColaContainerImage.classList.add("image");
+  const cocoColaActualImage = document.createElement("img");
+  cocoColaActualImage.classList.add("actual-image");
+  cocoColaActualImage.src = cocoColaImage;
+  const cocoColaDescription = document.createElement("div");
+  cocoColaDescription.classList.add("description");
+  cocoColaDescription.textContent = "Want a drink with your meal?, have some Coco-cola.";
   // Add DOM elements
   allCenteredContent.appendChild(menuContent);
   menuContent.appendChild(menuTitle);
@@ -223,7 +267,26 @@ function menu(){
   chocolateCard.appendChild(chocolateContainerImage);
   chocolateContainerImage.appendChild(chocolateActualImage);
   chocolateCard.appendChild(chocolateDescription);
-
+  //Adding Drinks section
+  menuContent.appendChild(drinksSection);
+  drinksSection.appendChild(drinksSectionTitle);
+  drinksSection.appendChild(hrElement);
+  //Adding sevenUp to DOM
+  menuContent.appendChild(sevenUpMenuArticle);
+  sevenUpMenuArticle.appendChild(sevenUpCard);
+  sevenUpCard.appendChild(sevenUpPrice);
+  sevenUpCard.appendChild(sevenUpHeading);
+  sevenUpCard.appendChild(sevenUpContainerImage);
+  sevenUpContainerImage.appendChild(sevenUpActualImage);
+  sevenUpCard.appendChild(sevenUpDescription);
+  //Adding Coco-cola to DOM
+  menuContent.appendChild(cocoColaMenuArticle);
+  cocoColaMenuArticle.appendChild(cocoColaCard);
+  cocoColaCard.appendChild(cocoColaPrice);
+  cocoColaCard.appendChild(cocoColaHeading);
+  cocoColaCard.appendChild(cocoColaContainerImage);
+  cocoColaContainerImage.appendChild(cocoColaActualImage);
+  cocoColaCard.appendChild(cocoColaDescription);
 
 
 }
