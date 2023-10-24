@@ -3,6 +3,7 @@ import {getDefault} from "./functions/renderDefault";
 import {getHome} from "./functions/renderHome";
 import {clearContents} from "./functions/clear";
 import {menu} from "./functions/renderMenu";
+import {contactUs} from "./functions/renderContactUs";
 
 (function deploy(){
   getDefault();
@@ -20,6 +21,7 @@ import {menu} from "./functions/renderMenu";
   });
   contactLink.addEventListener("click", ()=>{
     clearContents();
+    contactUs()
   });
   
 })();
