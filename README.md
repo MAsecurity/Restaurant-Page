@@ -9,3 +9,5 @@ This project is about a fictional restaurant page named Tasty Pizza, which offer
 - NPM
 - Source maps
 - Webpack
+## Instructions
+Quick tip: Dependencies can be installed from the package.json file by running npm install.
