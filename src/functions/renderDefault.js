@@ -38,7 +38,52 @@ function renderDefault(){
   openingTimesFields.classList.add("opening-times-fields")
   const openTimesTitle = document.createElement("div");
   openTimesTitle.textContent = "Opening times";
-  openTimesTitle.classList.add("opening-times-title")
+  openTimesTitle.classList.add("opening-times-title");
+  // Create table
+  const table = document.createElement("table");
+  // Monday
+  const trMonday = document.createElement("tr");
+  const thMonday = document.createElement("th");
+  thMonday.textContent = "Monday:"
+  const tdMondayTime = document.createElement("td");
+  tdMondayTime.textContent = "12:00pm - 22:00pm";
+  // Tuesday
+  const trTuesday = document.createElement("tr");
+  const thTuesday = document.createElement("th");
+  thTuesday.textContent = "Tuesday:";
+  const tdTuesdayTime = document.createElement("td");
+  tdTuesdayTime.textContent = "12:00pm - 22:00pm"
+  // Wednesday
+  const trWednesday = document.createElement("tr");
+  const thWednesday = document.createElement("th");
+  thWednesday.textContent = "Wednesday:";
+  const tdWednesdayTime = document.createElement("td");
+  tdWednesdayTime.textContent = "12:00pm - 22:00pm";
+  // Thursday;
+  const trThursday = document.createElement("tr");
+  const thThursday = document.createElement("th");
+  thThursday.textContent = "Thursday:";
+  const tdThursdayTime = document.createElement("td");
+  tdThursdayTime.textContent = "12:00pm - 22:00pm"
+  // Friday
+  const trFriday = document.createElement("tr");
+  const thFriday = document.createElement("th");
+  thFriday.textContent = "Friday:";
+  const tdFridayTime = document.createElement("td");
+  tdFridayTime.textContent = "12:00pm - 22:00pm";
+  // Saturday
+  const trSaturday = document.createElement("tr");
+  const thSaturday = document.createElement("th");
+  thSaturday.textContent = "Saturday:";
+  const tdSaturdayTime = document.createElement("td");
+  tdSaturdayTime.textContent = "10:00pm - 22:00pm";
+  // Sunday
+  const trSunday = document.createElement("tr");
+  const thSunday = document.createElement("th");
+  thSunday.textContent = "Sunday:";
+  const tdSundayTime = document.createElement("td");
+  tdSundayTime.textContent = "Closed";
+
   const imgContainer = document.createElement("div");
   imgContainer.classList.add("image-container")
   const actualImage = document.createElement("img");
@@ -46,7 +91,10 @@ function renderDefault(){
   actualImage.style.cssText = "border-radius: 4px; height: 100%; width: auto; "
   actualImage.classList.add("low-opacity")
   const buttonContainer = document.createElement("div");
-  const menuButton = document.createElement("button")
+  buttonContainer.classList.add("button-container-opening-times")
+  const openingTimesButton = document.createElement("button")
+  openingTimesButton.textContent = "Opening times"
+
   // footer
   const footer = document.createElement("div");
   footer.classList.add("footer")
@@ -70,9 +118,33 @@ function renderDefault(){
   titleField.appendChild(pizzaSpan)
   descriptionFields.appendChild(aboutUs)
   mainContainer.appendChild(openingTimesFields);
-  openingTimesFields.appendChild(openTimesTitle)
+  openingTimesFields.appendChild(openTimesTitle);
+  openingTimesFields.appendChild(table);
+  table.appendChild(trMonday);
+  trMonday.appendChild(thMonday);
+  trMonday.appendChild(tdMondayTime);
+  table.appendChild(trTuesday);
+  trTuesday.appendChild(thTuesday);
+  trTuesday.appendChild(tdTuesdayTime)
+  table.appendChild(trWednesday);
+  trWednesday.appendChild(thWednesday);
+  trWednesday.appendChild(tdWednesdayTime);
+  table.appendChild(trThursday);
+  trThursday.appendChild(thThursday);
+  trThursday.appendChild(tdThursdayTime);
+  table.appendChild(trFriday);
+  trFriday.appendChild(thFriday);
+  trFriday.appendChild(tdFridayTime);
+  table.appendChild(trSaturday);
+  trSaturday.appendChild(thSaturday);
+  trSaturday.appendChild(tdSaturdayTime);
+  table.appendChild(trSunday);
+  trSunday.appendChild(thSunday);
+  trSunday.appendChild(tdSundayTime);
   mainContainer.appendChild(imgContainer);
-  imgContainer.appendChild(actualImage)
+  imgContainer.appendChild(actualImage);
+  descriptionFields.appendChild(buttonContainer);
+  buttonContainer.appendChild(openingTimesButton)
   container.appendChild(footer)
   footer.appendChild(repoLink)
 

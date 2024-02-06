@@ -103,6 +103,15 @@ ul li:hover{
   gap: 20px;
   position: relative;
 }
+.button-container-opening-times button{
+  padding: 8px 16px;
+  background-color: #991b1b;
+  color: #f9fafb;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
 .footer {
   grid-row: 3;
   background-color: #030712;
@@ -113,11 +122,15 @@ ul li:hover{
   color: #f9fafb;
   font-weight: bold;
 }
-.low-opacity{
-  cursor: pointer;
+table{
+  color: #f9fafb;
+  font-size: 32px;
 }
-.low-opacity:hover{
-  opacity: 0.3;
+th{
+  text-align: right;
+}
+.low-opacity{
+  opacity: 0;
 }
 a{
   color: inherit;
