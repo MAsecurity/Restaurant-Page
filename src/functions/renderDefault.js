@@ -1,4 +1,5 @@
 import img from "../images/restaurant.png"
+import { switchOpacity } from "./logic/switchOpacity";
 function renderDefault(){
   const container = document.createElement("div");
   // navbar
@@ -89,7 +90,6 @@ function renderDefault(){
   const actualImage = document.createElement("img");
   actualImage.src =  img;
   actualImage.style.cssText = "border-radius: 4px; height: 100%; width: auto; "
-  actualImage.classList.add("low-opacity")
   const buttonContainer = document.createElement("div");
   buttonContainer.classList.add("button-container-opening-times")
   const openingTimesButton = document.createElement("button")
@@ -146,7 +146,8 @@ function renderDefault(){
   descriptionFields.appendChild(buttonContainer);
   buttonContainer.appendChild(openingTimesButton)
   container.appendChild(footer)
-  footer.appendChild(repoLink)
+  footer.appendChild(repoLink);
+  switchOpacity()
 
 }
 export {renderDefault}
