@@ -1,5 +1,6 @@
-import pepperoni from "../images/pepperoni.png"
-import cheesePizza from "../images/cheesePizza.png"
+import pepperoni from "../images/pepperoni.png";
+import cheesePizza from "../images/cheesePizza.png";
+import vegetablePizza from "../images/vegetablePizza.png";
 function menu(){
   const mainElement = document.querySelector(".main");
   const menuContainer = document.createElement("div");
@@ -46,7 +47,24 @@ function menu(){
   const cheesePizzaDescriptionInfo = document.createElement("div");
   cheesePizzaDescriptionInfo.textContent = "Savor the cheesy perfection of our delightful Cheese Pizza, featuring a rich blend of premium cheeses on a crispy crust, all for the tempting price of £10 – a taste of indulgence without breaking the bank!";
   cheesePizzaDescriptionInfo.classList.add("cheese-pizza-description-info");
-
+  // Vegetable Pizza
+  const vegetablePizzaField = document.createElement("div");
+  vegetablePizzaField.classList.add("vegetable-pizza-field");
+  const vegetablePizzaImageContainer = document.createElement("div");
+  vegetablePizzaImageContainer.classList.add("vegetable-pizza-image-container");
+  const vegetablePizzaImage = document.createElement("img");
+  vegetablePizzaImage.src = vegetablePizza;
+  const vegetablePizzaDescription = document.createElement("div");
+  vegetablePizzaDescription.classList.add("vegetable-pizza-description")
+  const vegetablePizzaDescriptionTitle = document.createElement("div");
+  vegetablePizzaDescriptionTitle.classList.add("vegetable-pizza-description-title");
+  vegetablePizzaDescriptionTitle.textContent = "Vegetable Pizza";
+  const vegetablePizzaDescriptionPrice = document.createElement("div");
+  vegetablePizzaDescriptionPrice.textContent = "£13";
+  vegetablePizzaDescriptionPrice.classList.add("vegetable-pizza-description-price");
+  const vegetablePizzaDescriptionInfo = document.createElement("div");
+  vegetablePizzaDescriptionInfo.textContent = "Savor the goodness of our Vegetable Pizza for £13 – a mouthwatering blend of fresh, colorful veggies atop a perfectly baked crust. Pure delight in every bite!"
+  vegetablePizzaDescriptionInfo.classList.add("vegetable-pizza-description-info");
 
 
   // Add Dom
@@ -69,6 +87,14 @@ function menu(){
   cheesePizzaDescription.appendChild(cheesePizzaDescriptionTitle);
   cheesePizzaDescription.appendChild(cheesePizzaDescriptionPrice);
   cheesePizzaDescription.appendChild(cheesePizzaDescriptionInfo);
+  // Add vegetable pizza
+  mainDishesContainer.appendChild(vegetablePizzaField);
+  vegetablePizzaField.appendChild(vegetablePizzaImageContainer);
+  vegetablePizzaImageContainer.appendChild(vegetablePizzaImage);
+  vegetablePizzaField.appendChild(vegetablePizzaDescription);
+  vegetablePizzaDescription.appendChild(vegetablePizzaDescriptionTitle);
+  vegetablePizzaDescription.appendChild(vegetablePizzaDescriptionPrice);
+  vegetablePizzaDescription.appendChild(vegetablePizzaDescriptionInfo);
 
 }
 export {menu}
