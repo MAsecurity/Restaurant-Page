@@ -2,6 +2,7 @@ import { home } from "./renderHome";
 import { clear } from "./clear";
 import { switchOpacity } from "./logic/switchOpacity";
 import { menu } from "./renderMenu";
+import { contactUs } from "./renderContactUs";
 function renderDefault(){
   const container = document.createElement("div");
   // navbar
@@ -31,6 +32,7 @@ function renderDefault(){
   linkContact.textContent = "Contact us";
   linkContact.onclick = () =>{
     clear();
+    contactUs();
   }
   // main
   const main =  document.createElement("div");
