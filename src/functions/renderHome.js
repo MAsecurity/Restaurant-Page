@@ -56,7 +56,7 @@ function home(){
   const thSaturday = document.createElement("th");
   thSaturday.textContent = "Saturday:";
   const tdSaturdayTime = document.createElement("td");
-  tdSaturdayTime.textContent = "10:00pm - 22:00pm";
+  tdSaturdayTime.textContent = "10:00am - 22:00pm";
   // Sunday
   const trSunday = document.createElement("tr");
   const thSunday = document.createElement("th");
